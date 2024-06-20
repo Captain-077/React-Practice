@@ -1,16 +1,29 @@
-import React from 'react'
+import seriesData from '../api/SeriesData.json'
 import Cards from './Cards'
+import  "../Test-destructuring/Netflix.css"
 
 function Netflix() {
 
-    const data = {
-        name:"nakul",
-        sportsTeam:"India",
-        address:"Faridabad",
-        }
-        
+  // const data = {
+  //   name: "nakul",
+  //   sportsTeam: "India",
+  //   address: "Faridabad",
+  // }
+
   return (
-    <Cards data = {data}/>
+
+    <ul className='container grid grid-three--cols'>
+
+      {seriesData.map((item) => {
+
+        return <Cards key={item.id} item={item} />
+
+      })}
+
+
+    </ul>
+
+
   )
 }
 
