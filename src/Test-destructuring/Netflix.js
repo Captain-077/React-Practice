@@ -1,6 +1,5 @@
 import seriesData from '../api/SeriesData.json'
 import Cards from './Cards'
-import  "../Test-destructuring/Netflix.css"
 
 function Netflix() {
 

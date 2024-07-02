@@ -1,15 +1,16 @@
 import React from 'react'
-import "../Test-destructuring/Netflix.css"
+import styles from "./Netflix.module.css"
+
 
 function Cards({ item }) {
   // const {name,rating,description,id,genre,watch_url} = item;
 
   return (
-    <li className="card" key={item.id}>
+    <li className={styles.card} key={item.id}>
       <div>
         <img src={item.img_url} alt="" width="40%" height="40%" />
       </div>
-      <div className='card-content'>
+      <div className={styles['card-content']}>
         <h2>Name: {item.name}</h2>
         <h3>Rating: {item.rating}</h3>
         <p>Summary: {item.description}</p>
