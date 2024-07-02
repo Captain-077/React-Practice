@@ -7,6 +7,7 @@ import "../src/App.css"
 import State from './Hooks/State';
 import ExampleComponent from './components/ExampleComponent';
 import "./Test-destructuring/Netflix.module.css"
+import Ex3 from './Questions/Ex3';
 
 
 export default function App(props) {
@@ -14,8 +15,11 @@ export default function App(props) {
   
     return (
       <>
-      <State/>
-      <Sibling/>
+      <div className="App">
+      <Ex3/>
+
+      </div>
+      
 
 
       </>
