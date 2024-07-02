@@ -14,11 +14,25 @@ export default function App(props) {
   
     return (
       <>
-      <Netflix/>
+      <State/>
+      <Sibling/>
 
 
       </>
     );
+  }
+
+
+  export const Sibling = (props) => {
+
+    console.log("Sibling component rendered");
+      return (
+  
+          <>
+              <h1>Sibling component</h1>
+          </>
+      )
+  
   }
 
 
