@@ -8,6 +8,7 @@ import State from './Hooks/State';
 import ExampleComponent from './components/ExampleComponent';
 import "./Test-destructuring/Netflix.module.css"
 import Ex3 from './Questions/Ex3';
+import Tailwind from './Tailwind/Tailwind';
 
 
 export default function App(props) {
@@ -16,7 +17,7 @@ export default function App(props) {
     return (
       <>
       <div className="App">
-      <Ex3/>
+      <Tailwind/>
 
       </div>
       
