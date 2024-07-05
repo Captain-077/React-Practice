@@ -20,6 +20,26 @@ export default function DropDown() {
       ];
 
   return (
+    <>
     <div>Make a multi option double drop down</div>
+    <select name="cities" id="">
+       { countries.map((item,index) => {
+           return <option value="">{item.name}</option>
+        })
+
+    }
+        
+    </select>
+
+
+    <select name="cities" id="">
+       { countries.map((item,index) => {
+           return <option value="">{item.cities}</option>
+        })
+
+    }
+        
+    </select>
+    </>
   )
 }
