@@ -11,9 +11,9 @@ export default function CheckList() {
 
         let newArr = list
         const updatedlist = newArr.filter((item, index) => {
-            if (item !== target) {
-                return item !== target
-            }
+           
+                return index !== target
+          
         })
         console.log(updatedlist);
         setList(updatedlist);
@@ -40,7 +40,7 @@ export default function CheckList() {
                 {
                     list.map((item,index) => {
                         return (
-                           <List item={item} index={index} handleDelete={handleDelete}/>
+                           <List key={index} item={item} index={index} handleDelete={handleDelete}/>
                         )
                     })
                 }

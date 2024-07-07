@@ -13,6 +13,8 @@ import DerivedState from './Hooks/DerivedState';
 import LiftStateUp from './Hooks/LiftStateUp';
 import DropDown from './Questions/CountryDropDown';
 import CheckList from './Questions/CheckboxDeleteBtn';
+import Main from './Questions/checboxFixed/Main';
+import ApiFetch from './Questions/ApiFetch';
 
 
 export default function App(props) {
@@ -21,7 +23,7 @@ export default function App(props) {
     return (
       <>
       <div className="App">
-      <CheckList/>
+      <ApiFetch/>
 
       </div>
       
