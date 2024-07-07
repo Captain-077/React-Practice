@@ -85,3 +85,8 @@ a {
 .grid-three--cols {
   grid-template-columns: repeat(3, 1fr);
 }
+
+
+.display-none{
+  display: none;
+}
