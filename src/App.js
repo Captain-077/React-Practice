@@ -16,6 +16,7 @@ import CheckList from './Questions/CheckboxDeleteBtn';
 import Main from './Questions/checboxFixed/Main';
 import ApiFetch from './Questions/ApiFetch';
 import Todo from './ACP test/Todo';
+import RegistrationForm from './components/RegistrationForm';
 
 
 export default function App(props) {
@@ -24,7 +25,7 @@ export default function App(props) {
     return (
       <>
       <div className="App">
-      <Todo/>
+      <RegistrationForm/>
 
       </div>
       
