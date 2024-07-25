@@ -1,56 +1,21 @@
 import React, { useState } from 'react'
 
-export default function RegistrationForm() {
+export default function RegistrationScalable() {
 
-    const [firstname, setFirstname] = useState("");
-    const [lastname, setLastname] = useState("");
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [phoneNumber, setPhoneNumber] = useState("");
+    const [form, setForm] = useState({ Firstname: "", Lastname: "", Email: "", Password: "", PhoneNumber: "" });
 
 
     const handlechange = (e) => {
-
         const { name, value } = e.target
-        // console.log(name)
 
-        switch (name) {
-            case "firstname":
-                setFirstname(value);
-                break;
-
-            case "lastname":
-                setLastname(value)
-                break;
-
-            case "email":
-                setEmail(value)
-                break;
-
-            case "password":
-                setPassword(value)
-                break;
-
-            case "phoneNumber":
-                setPhoneNumber(value)
-                break;
-
-        }
+        setForm((prev) => ({ ...prev, [name]: value }))
 
     }
 
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        const formData = {
-            firstname,
-            lastname,
-            email,
-            password,
-            phoneNumber
-        }
-        console.log(formData)
+        console.log(form)
     }
 
     return (
@@ -65,10 +30,10 @@ export default function RegistrationForm() {
                 </label>
                 <input type="text"
                     className='p-2 border-2'
-                    name='firstname'
+                    name='Firstname'
                     placeholder='Enter firstname'
                     required
-                    value={firstname}
+                    value={form.Firstname}
                     onChange={handlechange}
                 />
 
@@ -77,11 +42,11 @@ export default function RegistrationForm() {
                 </label>
                 <input type="text"
                     className='p-2 border-2'
-                    name='lastname'
+                    name='Lastname'
                     placeholder='Enter Lastname'
                     required
-                    value={lastname}
-                    onChange={(e) => handlechange(e)}
+                    value={form.Lastname}
+                    onChange={handlechange}
                 />
 
 
@@ -90,11 +55,11 @@ export default function RegistrationForm() {
                 </label>
                 <input type="text"
                     className='p-2 border-2'
-                    name='email'
+                    name='Email'
                     placeholder='Enter Email'
                     required
-                    value={email}
-                    onChange={(e) => handlechange(e)}
+                    value={form.Email}
+                    onChange={handlechange}
                 />
 
 
@@ -103,11 +68,11 @@ export default function RegistrationForm() {
                 </label>
                 <input type="password"
                     className='p-2 border-2'
-                    name='password'
+                    name='Password'
                     placeholder='Enter password'
                     required
-                    value={password}
-                    onChange={(e) => handlechange(e)}
+                    value={form.Password}
+                    onChange={handlechange}
                 />
 
 
@@ -116,11 +81,11 @@ export default function RegistrationForm() {
                 </label>
                 <input type="phone"
                     className='p-2 border-2'
-                    name='phoneNumber'
+                    name='PhoneNumber'
                     placeholder='Enter phone number'
                     required
-                    value={phoneNumber}
-                    onChange={(e) => handlechange(e)}
+                    value={form.PhoneNumber}
+                    onChange={handlechange}
                 />
 
                 <p>By creating an account you agree to our <a href="#" style={{ color: "dodgerBlue" }}> Terms & policy</a></p>
