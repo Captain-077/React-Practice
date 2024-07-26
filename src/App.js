@@ -5,6 +5,7 @@ import ExampleComponent from './components/ExampleComponent';
 import "./Test-destructuring/Netflix.module.css"
 
 import LoginForm from './Forms_React/LoginForm';
+import ContactForm from './Forms_React/ContactForm';
 
 
 export default function App(props) {
@@ -13,7 +14,7 @@ export default function App(props) {
     return (
       <>
       <div className="App">
-      <LoginForm/>
+      <ContactForm/>
 
       </div>
       
