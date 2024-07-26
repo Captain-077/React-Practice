@@ -27,11 +27,10 @@ function Form() {
         <>
             <form action="">
 
-                <input type="text" onChange={(e) => setdata(e.target.value)} />
+                <input type="text" onChange={(e) => setdata(e.target.value)} className='border-4'/>
 
-                <button onClick={HandleClick}>Print</button>
-                <p>{text}</p>
-
+               <button onClick={HandleClick}> Print</button>
+               <p>{text}</p>
 
             </form>
 
