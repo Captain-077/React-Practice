@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import "../src/App.css"
 import State from './Hooks/State';
 import ExampleComponent from './components/ExampleComponent';
@@ -6,7 +6,10 @@ import "./Test-destructuring/Netflix.module.css"
 
 import LoginForm from './Forms_React/LoginForm';
 import ContactForm from './Forms_React/ContactForm';
-
+import Welcome from './Test-destructuring/TestComp';
+import { Counter } from './Questions/counter';
+import Button from './Questions/buttonStyled';
+import SideHook from './Hooks/SideHook';
 
 export default function App(props) {
 
@@ -14,7 +17,7 @@ export default function App(props) {
     return (
       <>
       <div className="App">
-      <ContactForm/>
+    <SideHook/>
 
       </div>
       
