@@ -13,6 +13,9 @@ import SideHook from './Hooks/SideHook';
 import { UseHookChallenge } from './Hooks/UseHookChallenge';
 import {UseCleanup} from "./Hooks/UseCleanup"
 import { UseRef } from './Hooks/UseRef';
+import { BioProvider } from './ContextAPI/Index';
+import { Home } from './ContextAPI/Home';
+import { About } from './ContextAPI/About';
 
 export default function App(props) {
 
@@ -20,7 +23,11 @@ export default function App(props) {
   return (
     <>
       <div className="App">
-        <UseRef />
+      <BioProvider>
+        <Home/>
+        <About/>
+      </BioProvider>
+        
 
       </div>
 
