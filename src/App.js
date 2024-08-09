@@ -10,35 +10,38 @@ import Welcome from './Test-destructuring/TestComp';
 import { Counter } from './Questions/counter';
 import Button from './Questions/buttonStyled';
 import SideHook from './Hooks/SideHook';
+import { UseHookChallenge } from './Hooks/UseHookChallenge';
+import {UseCleanup} from "./Hooks/UseCleanup"
+import { UseRef } from './Hooks/UseRef';
 
 export default function App(props) {
 
-  
-    return (
-      <>
+
+  return (
+    <>
       <div className="App">
-    <SideHook/>
+        <UseRef />
 
       </div>
-      
 
 
-      </>
-    );
-  }
+
+    </>
+  );
+}
 
 
-  export const Sibling = (props) => {
+export const Sibling = (props) => {
 
-    console.log("Sibling component rendered");
-      return (
-  
-          <>
-              <h1>Sibling component</h1>
-          </>
-      )
-  
-  }
+  console.log("Sibling component rendered");
+  return (
+
+    <>
+      <h1>Sibling component</h1>
+    </>
+  )
+
+}
 
 
 

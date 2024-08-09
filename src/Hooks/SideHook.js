@@ -12,14 +12,15 @@ export default function SideHook() {
             setCount(date.toLocaleTimeString());
 
         }, 1000)
-        return
+     
     }, [])
 
 
 
     return (
         <>
-            {count}
+        <h1>{count}</h1>
+            
 
         </>
 
