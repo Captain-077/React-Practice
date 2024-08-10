@@ -9,13 +9,14 @@ import ContactForm from './Forms_React/ContactForm';
 import Welcome from './Test-destructuring/TestComp';
 import { Counter } from './Questions/counter';
 import Button from './Questions/buttonStyled';
-import SideHook from './Hooks/SideHook';
-import { UseHookChallenge } from './Hooks/UseHookChallenge';
-import {UseCleanup} from "./Hooks/UseCleanup"
+import SideHook from './UseEffect/SideHook';
+import { UseHookChallenge } from './UseEffect/UseHookChallenge';
+import { UseCleanup } from "./UseEffect/UseCleanup"
 import { UseRef } from './Hooks/UseRef';
 import { BioProvider } from './ContextAPI/Index';
 import { Home } from './ContextAPI/Home';
 import { About } from './ContextAPI/About';
+import { HowNotToFetchApi } from './UseEffect/HowNotToFetchApi';
 
 export default function App(props) {
 
@@ -23,11 +24,8 @@ export default function App(props) {
   return (
     <>
       <div className="App">
-      <BioProvider>
-        <Home/>
-        <About/>
-      </BioProvider>
-        
+        <HowNotToFetchApi />
+
 
       </div>
 
