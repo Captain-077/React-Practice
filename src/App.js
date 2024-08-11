@@ -18,6 +18,7 @@ import { Home } from './ContextAPI/Home';
 import { About } from './ContextAPI/About';
 import { HowNotToFetchApi } from './UseEffect/HowNotToFetchApi';
 import { RightFetchAPI } from './UseEffect/RightFetchAPI';
+import { AsyncFetch } from './UseEffect/AsyncFetch';
 
 export default function App(props) {
 
@@ -25,7 +26,7 @@ export default function App(props) {
   return (
     <>
       <div className="App">
-        <RightFetchAPI />
+        <AsyncFetch />
 
 
       </div>
